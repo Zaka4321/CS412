@@ -96,11 +96,11 @@ The `data/annotated_data/` directory contains manually annotated data for four u
 
 #### **Classification Results**:
 - **Round 1**:
-  - The classification model achieved an accuracy of **69%%**, with the most challenging categories being "travel" and "fitness" due to overlapping features.
+  - The classification model achieved an accuracy of **69%**, with the most challenging categories being "travel" and "fitness" due to overlapping features.
   - Adjustments in feature selection slightly improved performance for subsequent rounds.
 
 - **Round 2**:
-  - Accuracy improved to **38%%** after including additional features like engagement metrics and text embeddings.
+  - Accuracy improved to **38%** after including additional features like engagement metrics and text embeddings.
   - The model struggled with classifying smaller categories due to class imbalance.
 
 - **Round 3**:
