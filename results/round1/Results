@@ -1,0 +1,3 @@
+# Round 1 Results
+
+Classification accuracy: 0.80531 (Rank 80.0/141) --- Classification f1-weighted: 0.694727 (Rank 64.0/141) --- Regression error: 4901.286817 (Rank 103.0/141)
