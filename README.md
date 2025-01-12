@@ -4,45 +4,7 @@ Welcome to the repository for the CS 412 Machine Learning course project. This r
 
 ---
 
-## **Repository Structure**
 
-```plaintext
-ML_Project_CS412/
-├── data/
-│   ├── raw_data/                   # Raw data files for training and testing
-│   │   ├── training-dataset.jsonl.gz       # Training dataset with user profiles and posts
-│   │   ├── train-classification.csv        # Labels for classification task
-│   │   ├── test-regression-round1.jsonl    # Test data for regression (Round 1)
-│   │   ├── test-regression-round2.jsonl    # Test data for regression (Round 2)
-│   │   ├── test-regression-round3.jsonl    # Test data for regression (Round 3)
-│   │   ├── test-classification-round1.dat  # Test data for classification (Round 1)
-│   │   ├── test-classification-round2.dat  # Test data for classification (Round 2)
-│   │   ├── test-classification-round3.dat  # Test data for classification (Round 3)
-│   ├── annotated_data/             # Annotated data for selected users
-│       ├── annotations_user1.json         # Annotations for user 1
-│       ├── annotations_user2.json         # Annotations for user 2
-│       ├── annotations_user3.json         # Annotations for user 3
-│       ├── annotations_user4.json         # Annotations for user 4
-├── results/
-│   ├── round1/
-│   │   ├── prediction-classification-round1.json  # Predictions for classification (Round 1)
-│   │   ├── prediction-regression-round1.json      # Predictions for regression (Round 1)
-│   │   ├── ranking_screenshot_round1.png          # Screenshot of Round 1 ranking
-│   ├── round2/
-│   │   ├── prediction-classification-round2.json  # Predictions for classification (Round 2)
-│   │   ├── prediction-regression-round2.json      # Predictions for regression (Round 2)
-│   │   ├── ranking_screenshot_round2.png          # Screenshot of Round 2 ranking
-│   ├── round3/
-│       ├── prediction-classification-round3.json  # Predictions for classification (Round 3)
-│       ├── prediction-regression-round3.json      # Predictions for regression (Round 3)
-├── notebooks/
-│   ├── round1_regression_classification.ipynb  # Combined notebook for regression and classification (Round 1)
-│   ├── regression_round2.ipynb                # Regression notebook for Round 2
-│   ├── classification_round2.ipynb           # Classification notebook for Round 2
-│   ├── annotation_analysis.ipynb             # Annotation analysis notebook
-├── README.md                       # Overview and instructions for the project
-├── requirements.txt                # Python dependencies
-├── LICENSE                         # License for the project
 
 
 # Project Overview
