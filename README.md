@@ -116,8 +116,6 @@ The `data/annotated_data/` directory contains manually annotated data for four u
 - **Round 2**:
   - MAE improved to **BB** by incorporating additional features such as profile activity and average likes per post.
 
-- **Round 3**:
-  - Final MAE: **CC**, indicating steady improvement in predicting engagement metrics across all rounds.
 
 ---
 
