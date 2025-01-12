@@ -96,12 +96,10 @@ The `data/annotated_data/` directory contains manually annotated data for four u
 
 #### **Classification Results**:
 - **Round 1**:
-  - The classification model achieved an accuracy of **69%**, with the most challenging categories being "travel" and "fitness" due to overlapping features.
-  - Adjustments in feature selection slightly improved performance for subsequent rounds.
+  Classification accuracy: 0.80531 (Rank 80.0/141) --- Classification f1-weighted: 0.694727 (Rank 64.0/141)
 
 - **Round 2**:
-  - Accuracy improved to **38%** after including additional features like engagement metrics and text embeddings.
-  - The model struggled with classifying smaller categories due to class imbalance.
+  - Classification accuracy: 0.81057 (Rank 109.0/138) --- Classification f1-weighted: 0.354373 (Rank 109.0/138)
 
 - **Round 3**:
   - Final accuracy: **%**. The inclusion of more balanced training data significantly improved overall results.
@@ -110,11 +108,10 @@ The `data/annotated_data/` directory contains manually annotated data for four u
 
 #### **Regression Results**:
 - **Round 1**:
-  - The regression model achieved a **Mean Absolute Error (MAE)** of **AA**.
-  - Predictions for posts with very high or very low likes were less accurate, likely due to overfitting.
+  - Regression error: 4901.286817 (Rank 103.0/141)
 
 - **Round 2**:
-  - MAE improved to **BB** by incorporating additional features such as profile activity and average likes per post.
+  - Regression error: 4084.867489 (Rank 111.0/138)
 
 
 ---
