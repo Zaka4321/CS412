@@ -51,47 +51,47 @@ jupyter notebook
 
 ### Methodology
 
-##Progression Through Rounds
+## Progression Through Rounds
 
-#Round 1
+# Round 1
 
 In Round 1, we focused on applying basic machine learning techniques without heavily preprocessing the data or addressing class imbalance. The dataset was kept mostly as-is, and we passed the data directly through the machine learning model. This approach yielded reasonable results but revealed the limitations of unbalanced datasets.
 
-#Classification Results:
+# Classification Results:
 
-Accuracy: 0.80531 (Rank 80/141)
+**Accuracy:** 0.80531 (Rank 80/141)
 
-F1-weighted: 0.694727 (Rank 64/141)
+**F1-weighted:** 0.694727 (Rank 64/141)
 
-#Regression Results:
+# Regression Results:
 
-Error: 4901.286817 (Rank 103/141)
+**Error:** 4901.286817 (Rank 103/141)
 
-#Round 2
+# Round 2
 
 For Round 2, we aimed to improve classification performance by balancing the dataset. We dropped classes with very few values based on the hypothesis that a balanced dataset would enhance model accuracy. Despite balancing the data, the inherent imbalance in the test data negatively impacted the model's generalization, resulting in a significant decrease in classification accuracy.
 
-#Classification Results:
+# Classification Results:
 
-Accuracy: 0.81057 (Rank 109/138)
+**Accuracy:** 0.81057 (Rank 109/138)
 
-F1-weighted: 0.354373 (Rank 109/138)
+**F1-weighted:** 0.354373 (Rank 109/138)
 
-#Regression Results:
+# Regression Results:
 
-Error: 1429.240571 (Rank 63/138)
+**Error:** 1429.240571 (Rank 63/138)
 
 This round highlighted the importance of carefully handling class imbalance while considering the nature of the test data.
 
-#Round 3
+# Round 3
 
 In Round 3, we revisited our approach by reusing the code from Round 2 but with additional fine-tuning and adjustments based on insights gained from previous rounds. The final models aimed to better generalize on imbalanced test data while maintaining a balanced approach during training.
 
-##Data Preprocessing
+## Data Preprocessing
 
-#Classification Task:
+# Classification Task:
 
-Data Loading: Profile metadata and posts data were loaded.
+**Data Loading:** Profile metadata and posts data were loaded.
 
 Handling Missing Data: Missing values were imputed using median values for numerical fields and mode for categorical fields.
 
@@ -101,13 +101,13 @@ Extracted relevant features from metadata, such as the number of posts, average 
 
 Text data from posts were vectorized using TF-IDF.
 
-Normalization: Numerical features were normalized using Min-Max scaling to improve model performance.
+**Normalization:** Numerical features were normalized using Min-Max scaling to improve model performance.
 
-#Regression Task:
+# Regression Task:
 
-Data Loading: Post-level data was loaded and cleaned.
+**Data Loading:** Post-level data was loaded and cleaned.
 
-Log Transformation: The like count was log-transformed to handle heavy-tailed distributions and improve model stability.
+**Log Transformation:** The like count was log-transformed to handle heavy-tailed distributions and improve model stability.
 
 **Feature Selection:**
 
@@ -115,25 +115,25 @@ Extracted features such as post length, hashtag count, and media type (image, vi
 
 Engineered interaction features between engagement metrics and account popularity.
 
-Splitting Data: Data was split into training and test sets with an 80-20 ratio.
+**Splitting Data:** Data was split into training and test sets with an 80-20 ratio.
 
-##Model Training
+## Model Training
 
-#Classification Task:
+# Classification Task:
 
-Model Selection: Various models were tested, including Logistic Regression, Random Forest, and XGBoost.
+**Model Selection:** Various models were tested, including Logistic Regression, Random Forest, and XGBoost.
 
-Hyperparameter Tuning: Grid search was used to find the optimal hyperparameters for each model.
+**Hyperparameter Tuning:** Grid search was used to find the optimal hyperparameters for each model.
 
-Final Model: XGBoost was selected based on its superior accuracy and robustness to imbalanced classes.
+**Final Model:** XGBoost was selected based on its superior accuracy and robustness to imbalanced classes.
 
-#Regression Task:
+# Regression Task:
 
-Model Selection: Linear Regression, Ridge Regression, and Gradient Boosting Regressor were evaluated.
+**Model Selection:** Linear Regression, Ridge Regression, and Gradient Boosting Regressor were evaluated.
 
-Hyperparameter Tuning: Cross-validation was applied to determine the best regularization parameters.
+**Hyperparameter Tuning:** Cross-validation was applied to determine the best regularization parameters.
 
-Final Model: Ridge Regression was chosen due to its lower mean squared error (MSE) on the validation set.
+**Final Model:** Ridge Regression was chosen due to its lower mean squared error (MSE) on the validation set.
 
 ### 5. Results
 - **Predictions for Each Round**:
